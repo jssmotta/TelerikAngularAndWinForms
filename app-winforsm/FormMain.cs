@@ -63,6 +63,6 @@ public partial class FormMain : RadForm
             new { name = "71+", value = 7, color = "pink" }
         };
 
-        this.angularWebControl1.LoadData("Patiante ages in gastro deseases", dataAges);
+        this.angularWebControl1.LoadData("Patiant ages in gastro deseases", dataAges);
     }
 }

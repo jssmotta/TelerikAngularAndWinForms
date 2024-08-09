@@ -1,0 +1,24 @@
+<div *ngIf="winFormsData === null">Loading....</div>
+
+<div *ngIf="winFormsData !== null"> 
+  <kendo-chart    
+    (seriesClick)="onSeriesClick($event)">
+    <kendo-chart-title
+      color="black"
+      font="12pt sans-serif"
+      text="WinForms x Angular - Data integration"
+    >
+    </kendo-chart-title>
+    <kendo-chart-legend position="top"></kendo-chart-legend>
+    <kendo-chart-series>
+      <kendo-chart-series-item
+        [data]="winFormsData"
+        [labels]="{ visible: true, content: label}"       
+        [type]="typeChart"
+        categoryField="name"
+        colorField="color"
+        field="value">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+</div>

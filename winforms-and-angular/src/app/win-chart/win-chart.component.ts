@@ -35,13 +35,7 @@ export class WinChartComponent {
 
   public label(args: LegendLabelsContentArgs): string {
     return `${args.dataItem.name}`;
-  } 
-
-  // Function to dispatch the custom event
-  sendEvent() {
-
- 
-  };
+  }  
 
   onSeriesClick(event: SeriesClickEvent): void {
     const category = event.category;
